@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import heroVideo from "./assets/guinea.mp4";
+import heroVideo from "./assets/guinea1.mp4";
 import blueprintImage from "./assets/blueprint.png";
 import concept4dGaussianSplat from "./assets/concept-4d-gaussian-splat.png";
 
