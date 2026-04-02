@@ -1708,14 +1708,13 @@ export default function App() {
           </div>
 
           <div className="card commercial-card commercial-wide">
-            <h3 className="pricing-phase-title">Recommended Professional Services</h3>
-            <p>
-              <strong>Illustrative combined services range: $95,000–$115,000</strong>{" "}
-              (Phase 1 + contracted Phase 2, before retention).
-            </p>
+            <h3 className="pricing-phase-title">
+              Illustrative combined total (professional services only)
+            </h3>
             <p style={{ marginBottom: 0 }}>
-              This phased structure creates a defined approval gate between planning and
-              implementation.
+              <strong>$95,000–$115,000</strong> simply restates Phase 1 plus Phase 2
+              professional services (before retention)—not an additional fee; materials
+              and hardware stay separate unless bundled.
             </p>
           </div>
 
