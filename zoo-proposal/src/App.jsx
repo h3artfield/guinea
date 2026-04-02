@@ -1242,16 +1242,6 @@ export default function App() {
                   consistency, animal motion capture, and repeatable output quality.
                 </p>
               </div>
-
-              <div className="card">
-                <h3 style={{ marginTop: 0 }}>Suggested talking point</h3>
-                <p className="mini-note">
-                  “Even with a simple handheld capture, the habitat already
-                  reconstructs into a believable volumetric scene. A dedicated
-                  360° camera install would turn this into a permanent digital
-                  exhibit platform.”
-                </p>
-              </div>
             </div>
           </div>
         </div>
