@@ -40,15 +40,12 @@ export default function App() {
   ];
 
   const deliverables = [
-    "Proposal-ready 3D Gaussian splat proof of concept",
-    "Volumetric capture stage plan: synchronized camera ring / multi-view arrays per GP-01 (19 cameras for this habitat)—dense human-scale rigs in research use more views; this exhibit is scoped to the blueprint and BOM.",
-    "Permanent multi-camera 4D architecture for a true virtual twin",
-    "Interactive 3D layering via path tracing: add digital wardrobe, props, and filters so objects properly reflect the habitat lighting and show believable refraction in glass and water",
-    "Relighting & atmosphere: digitally relight the exhibit, add fog, and author moody educational scenes without rebuilding geometry",
-    "Historical preservation: a durable digital file of the habitat and animals—preserved even if the physical structure changes",
-    "Web-hosted interactive proposal experience",
-    "v1 chunk pipeline: continuous multi-view capture → ~30 s segments → selective promotion into reconstruction → publish playable splat chunks → viewer shows the newest finished chunk (intentional capture-to-display gap—not raw live passthrough)",
-    "Optional path to Unreal, kiosk, and AR expansion",
+    "Proposal-ready interactive 3D habitat (Gaussian splat proof of concept)",
+    "360° camera system design tailored to the guinea pig exhibit (low-profile, habitat-integrated, non-invasive)",
+    "Permanent multi-camera capture architecture for future 4D expansion",
+    "Web-based interactive experience for stakeholders, visitors, and donors",
+    "Digital twin of the habitat for education, preservation, and media use",
+    "Optional expansion path to kiosk, Unreal Engine, and AR experiences",
   ];
 
   const v1PipelineSpecs = [
@@ -816,6 +813,34 @@ export default function App() {
           color: #dce9f8;
         }
 
+        .pilot-narrative p {
+          margin: 0 0 12px;
+          color: #b4c4d9;
+          line-height: 1.65;
+        }
+
+        .pilot-narrative p:last-child {
+          margin-bottom: 0;
+        }
+
+        .pilot-narrative-lead {
+          margin-top: 4px;
+          margin-bottom: 8px;
+          font-weight: 600;
+          color: #dce7f5;
+        }
+
+        .pilot-narrative ul {
+          margin: 0 0 12px;
+          padding-left: 20px;
+          color: #b4c4d9;
+          line-height: 1.65;
+        }
+
+        .pilot-narrative li + li {
+          margin-top: 4px;
+        }
+
         .pricing-card {
           position: relative;
         }
@@ -941,10 +966,11 @@ export default function App() {
           margin-left: auto;
           margin-right: auto;
           width: 100%;
+          text-align: left;
         }
 
         .section .pipeline-card > h3 {
-          text-align: left;
+          text-align: center;
         }
 
         .pipeline-card + .pipeline-card {
@@ -1511,13 +1537,26 @@ export default function App() {
 
             <div className="deliverable-card">
               <h2 style={{ marginTop: 0, marginBottom: 14 }}>Pilot narrative</h2>
-              <p>
-                The handheld splat is a preview layer. The end state is a
-                permanent volumetric capture stage that feeds a dynamic behavioral
-                twin: synchronized multi-view data, velocity-aware Gaussians, and
-                interactive overlays for education, donors, and global remote
-                visits—extending the exhibit beyond the fence in time and space.
-              </p>
+              <div className="pilot-narrative">
+                <p>
+                  The handheld splat is a proof layer—not the end state.
+                </p>
+                <p>
+                  The full system evolves into a permanent volumetric capture
+                  installation: a synchronized multi-camera array that continuously
+                  reconstructs the habitat into a living digital twin.
+                </p>
+                <p className="pilot-narrative-lead">This enables:</p>
+                <ul>
+                  <li>Immersive remote exploration</li>
+                  <li>Educational overlays and storytelling</li>
+                  <li>Long-term digital preservation of the exhibit</li>
+                </ul>
+                <p>
+                  The result is not just a model, but a dynamic, evolving experience
+                  that extends the exhibit beyond the fence in time and space.
+                </p>
+              </div>
             </div>
           </div>
         </div>
