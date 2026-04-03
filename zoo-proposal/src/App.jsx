@@ -813,6 +813,10 @@ export default function App() {
           color: #dce9f8;
         }
 
+        .pilot-narrative {
+          text-align: left;
+        }
+
         .pilot-narrative p {
           margin: 0 0 12px;
           color: #b4c4d9;
