@@ -27,7 +27,7 @@ export default function App() {
     },
     {
       title: "Infinite Fidelity",
-      text: "Because the representation is continuous in time, the exhibit can be played at any effective frame rate—from real-time exploration to 10,000 FPS super slow motion to study subtle animal behavior frame by frame.",
+      text: "Because the representation is continuous in time, reconstructed playback can be explored at very high effective frame rates—deep slow motion for subtle behavior—without being limited to a single camera’s native frame rate (this is about the trained asset’s timeline, not a promise of raw live 10,000 FPS capture).",
     },
     {
       title: "Universal Accessibility",
@@ -80,7 +80,7 @@ export default function App() {
     {
       title: "Lenses for the directional cameras",
       line: "14 × Tamron 13FM06IR 6 mm CS-mount lenses — $48.95 each → $685.30",
-      note: "Cheapest reasonable first-pass lens choice for the perimeter cameras.",
+      note: "Budget 6 mm CS-mount option for perimeter views; alternate focal lengths or brands can be swapped per site survey and alignment tests.",
     },
     {
       title: "House-mounted 360 cameras",
@@ -105,7 +105,7 @@ export default function App() {
     {
       title: "Reconstruction / training box",
       line: "1 × RTX 5090 workstation allowance — $4,449.99",
-      note: "NVIDIA lists the RTX 5090 with 32 GB GDDR7 and a $1,999 starting price for the card, but a real prebuilt desktop with a 5090 is much higher; Tom’s recently highlighted a Dell Area-51 RTX 5090 configuration at $4,449.99.",
+      note: "Illustrative allowance for a workstation with RTX 5090-class GPU (32 GB GDDR7 class). System pricing varies by vendor and configuration—anchor with formal quotes before procurement.",
     },
     {
       title: "Patch panel",
@@ -1183,10 +1183,12 @@ export default function App() {
             <div>
               <h2>Interactive volumetric demo</h2>
               <p>
-                The embedded viewer is a handheld Gaussian splat from phone video{" "}
-                <strong>outside the habitat</strong>—a preview of the same medium at
-                exhibit scale:
-                synchronized rings, full 4D capture, and a permanent virtual twin.
+                The embedded viewer is a <strong>handheld</strong> Gaussian splat from
+                phone video <strong>outside the habitat</strong>—a lightweight proof of
+                the medium, not the installed rig. The program design targets
+                GP-01’s synchronized multi-camera layout, continuous capture, chunked
+                reconstruction, and a path to a permanent virtual twin (see blueprint
+                and pipeline sections).
               </p>
             </div>
           </div>
@@ -1495,9 +1497,10 @@ export default function App() {
             <div>
               <h2>Why the zoo benefits</h2>
               <p>
-                Lead with the sci-fi hologram promise, scrub-through-time fidelity,
-                and universal VR / phone drop-ins—then tie outcomes to behavioral
-                science and a permanent digital record, not only to camera counts.
+                The habitat becomes a living digital medium: stronger guest and
+                remote experiences (including in the browser and on phones), richer
+                education and research, and a durable record of the animals and
+                space—not a one-off render.
               </p>
             </div>
           </div>
